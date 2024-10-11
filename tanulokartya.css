@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+
+}
+#kozep{
+    text-align: center;
+}
+.melle{
+    display: flex;
+    margin-top: 50px;
+}
+.block{
+    display: block;
+    border: 0px solid;
+    margin: auto;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+    box-shadow: 5px 10px rgb(248, 230, 207);
+}
+button{
+    background-color: green;
+    border: 0px;
+    border-radius: 10px;
+}

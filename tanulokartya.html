@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tanulókártya</title>
+    <link rel="stylesheet" href="tanulokartya.css">
+    <script src="tanulokartya.js" defer></script>
+    <title>Tanulókártya</title>
 </head>
 <body>
-    <h1>tanulókártya</h1>
+    <div id="kozep"><h1>Tanulókártya Alkalmazás</h1></div>
+    <h2 id="kozep">Fővárosok</h2>
+    
+    <div class="melle">
+        <div class="block">
+            <h2>Mi Magyarország fővárosa?</h2>
+            <p id="mutat1"></p>
+            <button id="mutato1">Mutat/Elrejt válasz</button>
+        </div>
+
+        <div class="block">
+            <h2>Mi Anglia fővárosa?</h2>
+            <p id="mutat2"></p>
+            <button id="mutato2">Mutat/Elrejt válasz</button>
+        </div>
+
+        <div class="block">
+            <h2>Mi Olaszország fővárosa?</h2>
+            <p id="mutat3"></p>
+            <button id="mutato3">Mutat/Elrejt válasz</button>
+        </div>
+    </div>
+
+    <div class="melle">
+        <div class="block">
+            <h2>Mi Németország fővárosa?</h2>
+            <p id="mutat4"></p>
+            <button id="mutato4">Mutat/Elrejt válasz</button>
+        </div>
+
+        <div class="block">
+            <h2>Mi Spanyolország fővárosa?</h2>
+            <p id="mutat5"></p>
+            <button id="mutato5">Mutat/Elrejt válasz</button>
+        </div>
+
+        <div class="block">
+            <h2>Mi Ausztria fővárosa?</h2>
+            <p id="mutat6"></p>
+            <button id="mutato6">Mutat/Elrejt válasz</button>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById("mutato1").addEventListener("click", function() {
+            let text = document.getElementById("mutat1");
+            if (text.innerHTML === "") {
+                text.innerHTML = "Budapest";
+            } else {
+                text.innerHTML = "";
+            }
+        });
+
+
+        document.getElementById("mutato2").addEventListener("click", function() {
+            let text = document.getElementById("mutat2");
+            if (text.innerHTML === "") {
+                text.innerHTML = "London";
+            } else {
+                text.innerHTML = "";
+            }
+        });
+
+
+        document.getElementById("mutato3").addEventListener("click", function() {
+            let text = document.getElementById("mutat3");
+            if (text.innerHTML === "") {
+                text.innerHTML = "Róma";
+            } else {
+                text.innerHTML = "";
+            }
+        });
+
+
+        document.getElementById("mutato4").addEventListener("click", function() {
+            let text = document.getElementById("mutat4");
+            if (text.innerHTML === "") {
+                text.innerHTML = "Berlin";
+            } else {
+                text.innerHTML = "";
+            }
+        });
+
+
+        document.getElementById("mutato5").addEventListener("click", function() {
+            let text = document.getElementById("mutat5");
+            if (text.innerHTML === "") {
+                text.innerHTML = "Madrid";
+            } else {
+                text.innerHTML = "";
+            }
+        });
+
+
+        document.getElementById("mutato6").addEventListener("click", function() {
+            let text = document.getElementById("mutat6");
+            if (text.innerHTML === "") {
+                text.innerHTML = "Bécs";
+            } else {
+                text.innerHTML = "";
+            }
+        });
+    </script>
+
 </body>
 </html>
