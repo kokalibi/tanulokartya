@@ -13,41 +13,51 @@
 <div class="melle">
     <div class="block">
         <h2>Mi Magyarország fövárosa?</h2>
-        <p id="mutat"></p>
-        <button onclick="mutato()">Mutat/Elrejt válasz</button>
+        <p id="mutat1"></p>
+        <button id="mutato1">Mutat/Elrejt válasz</button>
     </div>
 
     <div class="block">
-        <h2>Mi Magyarország fövárosa?</h2>
-        <p id="mutat"></p>
-        <button onclick="mutato()">Mutat/Elrejt válasz</button>
+        <h2>Mi Anglia fövárosa?</h2>
+        <p id="mutat2"></p>
+        <button id="mutato2">Mutat/Elrejt válasz</button>
     </div>
 
     <div class="block">
-        <h2>Mi Magyarország fövárosa?</h2>
-        <p id="mutat"></p>
-        <button onclick="mutato()">Mutat/Elrejt válasz</button>
+        <h2>Mi Olaszország fövárosa?</h2>
+        <p id="mutat3"></p>
+        <button id="mutato3">Mutat/Elrejt válasz</button>
     </div>
 </div>
 
 <div class="melle">
     <div class="block">
-        <h2>Mi Magyarország fövárosa?</h2>
-        <p id="mutat"></p>
-        <button onclick="mutato()">Mutat/Elrejt válasz</button>
+        <h2>Mi Németország fövárosa?</h2>
+        <p id="mutat4"></p>
+        <button id="mutato4">Mutat/Elrejt válasz</button>
     </div>
 
     <div class="block">
-        <h2>Mi Magyarország fövárosa?</h2>
-        <p id="mutat"></p>
-        <button onclick="mutato()">Mutat/Elrejt válasz</button>
+        <h2>Mi Spanyolország fövárosa?</h2>
+        <p id="mutat5"></p>
+        <button id="mutato5">Mutat/Elrejt válasz</button>
     </div>
 
     <div class="block">
-        <h2>Mi Magyarország fövárosa?</h2>
-        <p id="mutat"></p>
-        <button onclick="mutato()">Mutat/Elrejt válasz</button>
+        <h2>Mi Ausztria fövárosa?</h2>
+        <p id="mutat6"></p>
+        <button id="mutato6">Mutat/Elrejt válasz</button>
     </div>
 </div>
+
+<script>
+    document.getElementById("mutato1").addEventListener("click", function(){
+    let text=document.getElementById("mutat1");
+    if(text.innerHTML===""){
+        text.innerHTML="Budapest";
+    } 
+    
+})
+</script>
 </body>
 </html>
